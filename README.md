@@ -33,3 +33,10 @@ cp -fv example.env .env
 # Inside api project run {app_name}
 python manage.py startapp {app_name}
 ```
+
+## Run development server
+
+```bash
+# Inside api project run
+python manage.py runserver 0:8089
+```
