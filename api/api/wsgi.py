@@ -11,6 +11,15 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'api.settings')
+from dotenv import load_dotenv
+from pathlib import Path
+env_path = Path('../../') / '.env'
+load_dotenv(dotenv_path=env_path)
+
+if os.getenv('DJANGO_SETTINGS_MODULE') is not None:
+    DJANGO_SETTINGS_MODULE = os.getenv('DJANGO_SETTINGS_MODULE')
+else:
+    DJANGO_SETTINGS_MODULE = 'api.settings.prod'
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", DJANGO_SETTINGS_MODULE)
 
 application = get_wsgi_application()

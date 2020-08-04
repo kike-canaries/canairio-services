@@ -3,9 +3,18 @@
 import os
 import sys
 
+from dotenv import load_dotenv
+from pathlib import Path
+env_path = Path('../') / '.env'
+load_dotenv(dotenv_path=env_path)
+
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'api.settings')
+    if os.getenv('DJANGO_SETTINGS_MODULE') is not None:
+        DJANGO_SETTINGS_MODULE = os.getenv('DJANGO_SETTINGS_MODULE')
+    else:
+        DJANGO_SETTINGS_MODULE = 'api.settings.prod'
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", DJANGO_SETTINGS_MODULE)
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

@@ -20,12 +20,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'jir9qm$ga_0zzgt8&hr3$3ef_s%tiv-r*(*tk030p_&mb03v_u'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [os.getenv("ALLOWED_HOSTS")]
+
+# TODO: Setup CORS_ORIGIN_WHITELIST see https://github.com/adamchainz/django-cors-headers#configuration
+CORS_ORIGIN_ALLOW_ALL = False
 
 
 # Application definition
