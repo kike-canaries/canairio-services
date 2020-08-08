@@ -1,1 +1,1 @@
-web: python api/manage.py migrate && python api/manage.py runserver 0:8089
+web: python api/manage.py migrate && python api/manage.py runserver 0.0.0.0:5000
