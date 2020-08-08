@@ -34,9 +34,9 @@ cp -fv example.env .env
 python manage.py startapp {app_name}
 ```
 
-## Run development server
+## Run the app locally
 
 ```bash
-# Run project
-python api/manage.py runserver 0:8089
+# Run the app locally
+heroku local web
 ```
