@@ -5,8 +5,14 @@ import sys
 
 from dotenv import load_dotenv
 from pathlib import Path
-env_path = Path('../') / '.env'
-load_dotenv(dotenv_path=env_path)
+
+from shutil import copyfile
+
+# Check dotenv
+if not os.path.exists(Path('../') / '.env'):
+    copyfile(Path('../') / 'example.env', Path('../') / '.env')
+# Load dotenv
+load_dotenv(dotenv_path=Path('../') / '.env')
 
 
 def main():
