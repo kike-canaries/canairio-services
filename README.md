@@ -37,6 +37,6 @@ python manage.py startapp {app_name}
 ## Run development server
 
 ```bash
-# Inside api project run
-python manage.py runserver 0:8089
+# Run project
+python api/manage.py runserver 0:8089
 ```
