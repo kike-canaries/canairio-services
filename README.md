@@ -28,11 +28,19 @@ pip install -r requirements.txt
 cp -fv example.env .env
 ```
 
-## Create new Django app
+## Creating an admin user
+
+Read Documentation: [here](https://docs.djangoproject.com/en/3.0/intro/tutorial02/#creating-an-admin-user)
 
 ```bash
-# Inside api project run {app_name}
-python manage.py startapp {app_name}
+# Linux terminal
+python api/manage.py createsuperuser
+# ---
+Username: admin
+Email address: admin@example.com
+Password: **********
+Password (again): *********
+Superuser created successfully.
 ```
 
 ## Run the app locally
@@ -40,4 +48,18 @@ python manage.py startapp {app_name}
 ```bash
 # Run the app locally
 heroku local web
+```
+
+### Static Content
+
+```bash
+# In a browser go to:
+http://localhost:5000/
+```
+
+### Admin Content
+
+```bash
+# In a browser go to:
+http://localhost:5000/admin
 ```
