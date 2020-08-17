@@ -2,6 +2,10 @@
 
 CanAirIO Services
 
+**Conceptual Model**:
+
+[![Conceptual Model](./doc/Canairio-Services-Conceptual.png "Conceptual Model")](./doc/Canairio-Services-Conceptual.png)
+
 ---
 
 > Work in progress ...
