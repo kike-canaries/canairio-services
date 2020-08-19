@@ -2,6 +2,10 @@
 
 CanAirIO Services
 
+**Entity Model**:
+
+[![Entity Model](../doc/Canairio-Services-Entities.png "Entity Model")](./doc/Canairio-Services-Entities.png)
+
 ---
 
 > Work in progress ...
