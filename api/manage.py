@@ -9,10 +9,10 @@ from pathlib import Path
 from shutil import copyfile
 
 # Check dotenv
-if not os.path.exists(Path('') / '.env'):
-    copyfile(Path('') / 'example.env', Path('') / '.env')
+if not os.path.exists(Path('../') / '.env'):
+    copyfile(Path('../') / 'example.env', Path('../') / '.env')
 # Load dotenv
-load_dotenv(dotenv_path=Path('') / '.env')
+load_dotenv(dotenv_path=Path('../') / '.env')
 
 
 def main():

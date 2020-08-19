@@ -127,6 +127,6 @@ For each new Django App you will need to include the URLs reference within urlpa
 # Update the api/urls.py file
 urlpatterns = [
     ...
-    path('api/v1/{app_name}/', include('{app_name}.urls')),
+    path('api/', include('{app_name}.urls')),
 ]
 ```
