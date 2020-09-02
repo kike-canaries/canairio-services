@@ -2,6 +2,10 @@
 
 CanAirIO Services
 
+**Entity Model**:
+
+[![Entity Model](../doc/Canairio-Services-Entities.png "Entity Model")](./doc/Canairio-Services-Entities.png)
+
 ---
 
 > Work in progress ...
@@ -51,11 +55,11 @@ from rest_framework import serializers
 # Create your serializers here.
 
 # Example:
-class {AppName}Serializer(serializers.Serializer):
-    email = serializers.EmailField()
-    content = serializers.CharField(max_length=200)
-    created = serializers.DateTimeField()
-    ...
+class {AppName}Serializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = {AppName}
+        fields = ['id', 'something', 'etc', ...]
 ```
 
 - **URLs:**
@@ -123,6 +127,6 @@ For each new Django App you will need to include the URLs reference within urlpa
 # Update the api/urls.py file
 urlpatterns = [
     ...
-    path('api/v1/{app_name}/', include('{app_name}.urls')),
+    path('api/', include('{app_name}.urls')),
 ]
 ```
