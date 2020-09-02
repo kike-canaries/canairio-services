@@ -7,7 +7,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # Example:
-    # path('v1/{app_name}/example', views.{AppName}ExampleView.as_view(), name='{app_name}-example'),
-    # ...
+    path('v1/admin_influxdb', views.AdminInfluxDBView.as_view(), name='admin_influxdb-all'),
 ]

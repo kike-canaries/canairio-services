@@ -37,8 +37,8 @@ cp -fv example.env .env
 Read Documentation: [here](https://docs.djangoproject.com/en/3.0/intro/tutorial02/#creating-an-admin-user)
 
 ```bash
-# Linux terminal
-python api/manage.py createsuperuser
+# Insite api/ run
+python manage.py createsuperuser
 # ---
 Username: admin
 Email address: admin@example.com
