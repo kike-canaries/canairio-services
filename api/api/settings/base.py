@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'admin_influxdb',
+    'canairio_user',
 ]
 
 MIDDLEWARE = [
