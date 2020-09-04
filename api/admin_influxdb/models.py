@@ -9,8 +9,8 @@ class AdminInfluxDB(models.Model):
     Model to represent the User Admin InfluxDB
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    influxdb_secret_key = models.CharField(max_length=50, unique=True, blank=False)
-    influxdb_version = models.CharField(max_length=12, unique=True, blank=False)
+    influxdb_secret_key = models.CharField(max_length=50, unique=True, null=False, blank=False)
+    influxdb_version = models.CharField(max_length=12, unique=True, null=False, blank=False)
 
     # def __str__(self):
     #     return self.user.username

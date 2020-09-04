@@ -12,13 +12,14 @@ class AdminInfluxDBView(APIView):
     """
     Retrieve, create, update or delete an admin_influxdb instance.
     """
-    def get(self, request):
-        # Get the InfluxDB Admins
-        admins_influxdb = AdminInfluxDB.objects.all()
-        # AdminInfluxDB Serializer
-        serializer = AdminInfluxDBSerializer(admins_influxdb, many=True)
-        # Success
-        return Response({"status": status.HTTP_200_OK, "message": "Admins InfluxDB", "data": serializer.data}, status=status.HTTP_200_OK)
+    # TODO: Only can be used by Django Admin
+    # def get(self, request):
+    #     # Get the InfluxDB Admins
+    #     admins_influxdb = AdminInfluxDB.objects.all()
+    #     # AdminInfluxDB Serializer
+    #     serializer = AdminInfluxDBSerializer(admins_influxdb, many=True)
+    #     # Success
+    #     return Response({"status": status.HTTP_200_OK, "message": "Admins InfluxDB", "data": serializer.data}, status=status.HTTP_200_OK)
 
     # def post(self, request):
     #     # TODO: Something

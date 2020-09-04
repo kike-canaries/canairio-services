@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'admin_influxdb',
     'canairio_user',
+    'canairio_station',
 ]
 
 MIDDLEWARE = [
