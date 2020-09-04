@@ -7,5 +7,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('v1/canairio-user/register', views.CanairioUserRegisterView.as_view(), name='canairio-user-register'),
     path('v1/canairio-user', views.CanairioUserView.as_view(), name='canairio-user'),
 ]
