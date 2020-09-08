@@ -24,17 +24,22 @@ class CanairioUserRegisterView(APIView):
     def post(self, request):
         # Post new Canairio User
         try:
+            # Get the last User
+            user = User.objects.last()
             # Create User
-            user = User(username=request.data.get('username'), password=request.data.get('password'))
+            username = 'canario' + str(user.id)
+            password = request.data.get('fcm_token')
+            email = username + '@example.com'
+            user = User(username=username, password=password, email=email)
             # Store the password encripted
-            user.set_password(request.data.get('password'))
+            user.set_password(password)
             user.save()
         except IntegrityError as exc:
             # Error
             return Response({"status": status.HTTP_409_CONFLICT, "message": "Canairio User Failed", "data": {"error": str(exc)}}, status=status.HTTP_409_CONFLICT)
         try:
             # Create Canairio User
-            canairio_user = CanairioUser(user=user, device_id=request.data.get('device_id'), app_version=request.data.get('app_version'))
+            canairio_user = CanairioUser(user=user, device_id=request.data.get('device_id'), app_version=request.data.get('app_version'), fcm_token=request.data.get('fcm_token'))
             canairio_user.save()
         except IntegrityError as exc:
             # Error
