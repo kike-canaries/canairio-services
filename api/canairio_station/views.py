@@ -13,6 +13,9 @@ from canairio_user.serializers import CanairioUserSerializer
 
 from admin_influxdb.models import AdminInfluxDB
 
+import random
+import string
+
 # Create your views here.
 
 
@@ -37,6 +40,9 @@ class CanairioStationView(APIView):
         # Get the Canairio User
         canairio_user = CanairioUser.objects.get(user=request.user.id)
         try:
+            # Create random Station ID
+            letters_and_digits = (string.ascii_letters + string.digits).lower()
+            station_id = 'S' + ''.join((random.choice(letters_and_digits) for i in range(7)))
             # Create Canairio Station
             canairio_station = CanairioStation(
                 canairio_user=canairio_user,
@@ -48,7 +54,7 @@ class CanairioStationView(APIView):
                 city_name=request.data.get('city_name'),
                 neighborhood_name=request.data.get('neighborhood_name'),
                 zip_code=request.data.get('zip_code'),
-                station_id=request.data.get('station_id'),
+                station_id=station_id,
                 used_in=request.data.get('used_in')
             )
             canairio_station.save()
