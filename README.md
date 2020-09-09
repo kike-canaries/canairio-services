@@ -1,6 +1,8 @@
 # canairio-services
 
-CanAirIO Services
+CanAirIO Services `Project Description Here`
+
+---
 
 **Conceptual Model**:
 
@@ -9,6 +11,15 @@ CanAirIO Services
 ---
 
 > Work in progress ...
+
+**TODO:**
+
+- [ ] Add Project Description
+- [x] Postman API Documentation
+- [ ] Automated Testing with Postman
+- [ ] Getting Started Tutorial
+
+---
 
 ## Create and setup virtual environment
 
@@ -61,15 +72,19 @@ Superuser created successfully.
 heroku local web
 ```
 
-### Admin Content
+## Admin Content
 
 ```bash
 # In a browser go to:
 http://localhost:5000/admin
 ```
 
-### Postman API Documentation
+## Postman API Documentation
 
-Read and review the CanAirIO Services API Documentation in Postman:
+Read and review the CanAirIO Services API Documentation in Postman.
 
 [CanAirIO Services API Documentation](https://documenter.getpostman.com/view/2374715/TVCjx6Ba)
+
+## Getting Started
+
+Make sure you check out the [Getting Started with CanAirIO Services](./doc/getting-started.md) tutorial.
