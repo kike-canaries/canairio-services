@@ -11,15 +11,15 @@ CanAirIO Services `Project Description Here`
 - [ ] Add Project Description
 - [ ] Add About the Project
 - [ ] Add Introduction
-- [x] Requirements
-- [x] Create and Setup Virtual Environment
-- [x] Install Requeriments
-- [x] Setup Environment Variables
-- [x] Run the Project Locally
-- [x] Create Admin User
-- [x] Login Django Admin Site
-- [x] Create InfluxDB User
-- [x] Postman API Documentation
+- [x] ~~Requirements~~
+- [x] ~~Create and Setup Virtual Environment~~
+- [x] ~~Install Requeriments~~
+- [x] ~~Setup Environment Variables~~
+- [x] ~~Run the Project Locally~~
+- [x] ~~Create Admin User~~
+- [x] ~~Login Django Admin Site~~
+- [x] ~~Create InfluxDB User~~
+- [x] ~~Postman API Documentation~~
 - [ ] Run Automated Testing with Postman
 - [ ] Getting Started Video
 
