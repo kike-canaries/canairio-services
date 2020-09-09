@@ -1,14 +1,14 @@
 # canairio-services
 
-CanAirIO Services
+CanAirIO Services `Project Description Here`
+
+---
 
 **Entity Model**:
 
 [![Entity Model](../doc/Canairio-Services-Entities.png "Entity Model")](./doc/Canairio-Services-Entities.png)
 
 ---
-
-> Work in progress ...
 
 ## Create New Django App
 
@@ -17,7 +17,7 @@ CanAirIO Services
 python manage.py startapp {app_name}
 ```
 
-### Setup API Settings
+## Setup API Settings
 
 For each New Django App you will need to add it within the INSTALLED_APPS, check the api/settings/base.py file:
 
@@ -29,7 +29,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Setup New Django App Serializers and URLs
+## Setup New Django App Serializers and URLs
 
 Within each New Django App:
 
@@ -81,7 +81,7 @@ urlpatterns = [
 ]
 ```
 
-### Setup New Django App Views
+## Setup New Django App Views
 
 Within each New Django App:
 
@@ -119,7 +119,7 @@ class AppNameExampleView(APIView):
         # return Response(serializer.data, status=status.HTTP_200_OK)
 ```
 
-### Setup API URLs
+## Setup API URLs
 
 For each new Django App you will need to include the URLs reference within urlpatterns, check the api/urls.py file:
 
@@ -130,9 +130,3 @@ urlpatterns = [
     path('api/', include('{app_name}.urls')),
 ]
 ```
-
-### Postman API Documentation
-
-Read and review the CanAirIO Services API Documentation in Postman:
-
-[CanAirIO Services API Documentation](https://documenter.getpostman.com/view/2374715/TVCjx6Ba)
