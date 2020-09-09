@@ -61,16 +61,15 @@ Superuser created successfully.
 heroku local web
 ```
 
-### Static Content
-
-```bash
-# In a browser go to:
-http://localhost:5000/
-```
-
 ### Admin Content
 
 ```bash
 # In a browser go to:
 http://localhost:5000/admin
 ```
+
+### Postman API Documentation
+
+Read and review the CanAirIO Services API Documentation in Postman:
+
+[CanAirIO Services API Documentation](https://documenter.getpostman.com/view/2374715/TVCjx6Ba)
