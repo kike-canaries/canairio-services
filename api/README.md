@@ -130,3 +130,9 @@ urlpatterns = [
     path('api/', include('{app_name}.urls')),
 ]
 ```
+
+### Postman API Documentation
+
+Read and review the CanAirIO Services API Documentation in Postman:
+
+[CanAirIO Services API Documentation](https://documenter.getpostman.com/view/2374715/TVCjx6Ba)
