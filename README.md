@@ -18,6 +18,13 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
+## Linux Debian/Ubuntu requirements
+
+```bash
+# Linux terminal
+sudo apt install libpq-dev
+```
+
 ## Install Python requirements
 
 ```bash

@@ -7,5 +7,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # path('v1/admin-influxdb', views.AdminInfluxDBView.as_view(), name='admin-influxdb'),
+    path('v1/token-influxdb', views.TokenInfluxDBView.as_view(), name='token-influxdb'),
 ]
