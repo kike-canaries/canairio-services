@@ -276,4 +276,7 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
+# Codespaces
+pythonenv3.8
+
 # End of https://www.toptal.com/developers/gitignore/api/django
