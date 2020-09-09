@@ -279,4 +279,7 @@ dmypy.json
 # Codespaces
 pythonenv3.8
 
+# VSCode Settings
+.vscode
+
 # End of https://www.toptal.com/developers/gitignore/api/django
