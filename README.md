@@ -17,8 +17,8 @@ CanAirIO Services `Project Description Here`
 - [ ] Add Project Description
 - [ ] Add About the Project
 - [ ] Add Introduction
-- [x] Getting Started Tutorial
-- [x] Postman API Documentation
+- [x] ~~Getting Started Tutorial~~
+- [x] ~~Postman API Documentation~~
 - [ ] Add Code of Conduct
 - [ ] Add Contributing Guidelines
 - [ ] Add Issue Templates
