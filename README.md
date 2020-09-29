@@ -12,13 +12,14 @@ CanAirIO Services `Project Description Here`
 
 > Work in progress ...
 
-**TODO:**
+## Roadmap
 
 - [ ] Add Project Description
 - [ ] Add About the Project
 - [ ] Add Introduction
 - [x] ~~Getting Started Tutorial~~
 - [x] ~~Postman API Documentation~~
+- [ ] Swagger/OpenAPI Documentation
 - [ ] Add Code of Conduct
 - [ ] Add Contributing Guidelines
 - [ ] Add Issue Templates
