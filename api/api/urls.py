@@ -26,12 +26,12 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Snippets API",
-        default_version='v1',
-        description="Test description",
-        terms_of_service="https://www.google.com/policies/terms/",
-        contact=openapi.Contact(email="contact@snippets.local"),
-        license=openapi.License(name="BSD License"),
+        title="CanAirIO Services",
+        default_version='1.0.0',
+        description="API for all CanAirIO Services",
+        terms_of_service="https://canair.io/disclaimer.html",
+        contact=openapi.Contact(email="info@canair.io"),
+        license=openapi.License(name="GPL-3.0 License"),
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
