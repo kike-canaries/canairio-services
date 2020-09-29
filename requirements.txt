@@ -1,7 +1,8 @@
 Django==3.0.9
 djangorestframework==3.11.0
 djangorestframework-jwt==1.11.0
-django-rest-swagger==2.2.0
+ruamel.yaml==0.16.12
+drf-yasg==1.17.1
 pyyaml==5.3.1
 uritemplate==3.0.1
 pyjwt==1.7.1
